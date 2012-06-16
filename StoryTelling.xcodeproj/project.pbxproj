@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E348F311158C6A24009D25D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F310158C6A24009D25D5 /* UIKit.framework */; };
+		E348F313158C6A24009D25D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F312158C6A24009D25D5 /* Foundation.framework */; };
+		E348F315158C6A24009D25D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F314158C6A24009D25D5 /* CoreGraphics.framework */; };
+		E348F31B158C6A24009D25D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E348F319158C6A24009D25D5 /* InfoPlist.strings */; };
+		E348F31D158C6A24009D25D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E348F31C158C6A24009D25D5 /* main.m */; };
+		E348F321158C6A24009D25D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E348F320158C6A24009D25D5 /* AppDelegate.m */; };
+		E348F324158C6A24009D25D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E348F323158C6A24009D25D5 /* ViewController.m */; };
+		E348F327158C6A24009D25D5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E348F325158C6A24009D25D5 /* ViewController.xib */; };
+		E348F32F158C6A25009D25D5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F32E158C6A25009D25D5 /* SenTestingKit.framework */; };
+		E348F330158C6A25009D25D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F310158C6A24009D25D5 /* UIKit.framework */; };
+		E348F331158C6A25009D25D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E348F312158C6A24009D25D5 /* Foundation.framework */; };
+		E348F339158C6A25009D25D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E348F337158C6A25009D25D5 /* InfoPlist.strings */; };
+		E348F33C158C6A25009D25D5 /* StoryTellingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E348F33B158C6A25009D25D5 /* StoryTellingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E348F332158C6A25009D25D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E348F303158C6A24009D25D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E348F30B158C6A24009D25D5;
+			remoteInfo = StoryTelling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E348F30C158C6A24009D25D5 /* StoryTelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryTelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E348F310158C6A24009D25D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E348F312158C6A24009D25D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E348F314158C6A24009D25D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E348F318158C6A24009D25D5 /* StoryTelling-Info.plist */ = {isa = PBXFileReference; path = "StoryTelling-Info.plist"; sourceTree = "<group>"; };
+		E348F31A158C6A24009D25D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E348F31C158C6A24009D25D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E348F31E158C6A24009D25D5 /* StoryTelling-Prefix.pch */ = {isa = PBXFileReference; path = "StoryTelling-Prefix.pch"; sourceTree = "<group>"; };
+		E348F31F158C6A24009D25D5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E348F320158C6A24009D25D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E348F322158C6A24009D25D5 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		E348F323158C6A24009D25D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E348F326158C6A24009D25D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E348F32D158C6A25009D25D5 /* StoryTellingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryTellingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E348F32E158C6A25009D25D5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E348F336158C6A25009D25D5 /* StoryTellingTests-Info.plist */ = {isa = PBXFileReference; path = "StoryTellingTests-Info.plist"; sourceTree = "<group>"; };
+		E348F338158C6A25009D25D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E348F33A158C6A25009D25D5 /* StoryTellingTests.h */ = {isa = PBXFileReference; path = StoryTellingTests.h; sourceTree = "<group>"; };
+		E348F33B158C6A25009D25D5 /* StoryTellingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryTellingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E348F309158C6A24009D25D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F311158C6A24009D25D5 /* UIKit.framework in Frameworks */,
+				E348F313158C6A24009D25D5 /* Foundation.framework in Frameworks */,
+				E348F315158C6A24009D25D5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E348F329158C6A25009D25D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F32F158C6A25009D25D5 /* SenTestingKit.framework in Frameworks */,
+				E348F330158C6A25009D25D5 /* UIKit.framework in Frameworks */,
+				E348F331158C6A25009D25D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E348F301158C6A24009D25D5 = {
+			isa = PBXGroup;
+			children = (
+				E348F316158C6A24009D25D5 /* StoryTelling */,
+				E348F334158C6A25009D25D5 /* StoryTellingTests */,
+				E348F30F158C6A24009D25D5 /* Frameworks */,
+				E348F30D158C6A24009D25D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E348F30D158C6A24009D25D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E348F30C158C6A24009D25D5 /* StoryTelling.app */,
+				E348F32D158C6A25009D25D5 /* StoryTellingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E348F30F158C6A24009D25D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E348F310158C6A24009D25D5 /* UIKit.framework */,
+				E348F312158C6A24009D25D5 /* Foundation.framework */,
+				E348F314158C6A24009D25D5 /* CoreGraphics.framework */,
+				E348F32E158C6A25009D25D5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E348F316158C6A24009D25D5 /* StoryTelling */ = {
+			isa = PBXGroup;
+			children = (
+				E348F31F158C6A24009D25D5 /* AppDelegate.h */,
+				E348F320158C6A24009D25D5 /* AppDelegate.m */,
+				E348F322158C6A24009D25D5 /* ViewController.h */,
+				E348F323158C6A24009D25D5 /* ViewController.m */,
+				E348F325158C6A24009D25D5 /* ViewController.xib */,
+				E348F317158C6A24009D25D5 /* Supporting Files */,
+			);
+			path = StoryTelling;
+			sourceTree = "<group>";
+		};
+		E348F317158C6A24009D25D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E348F318158C6A24009D25D5 /* StoryTelling-Info.plist */,
+				E348F319158C6A24009D25D5 /* InfoPlist.strings */,
+				E348F31C158C6A24009D25D5 /* main.m */,
+				E348F31E158C6A24009D25D5 /* StoryTelling-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E348F334158C6A25009D25D5 /* StoryTellingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E348F33A158C6A25009D25D5 /* StoryTellingTests.h */,
+				E348F33B158C6A25009D25D5 /* StoryTellingTests.m */,
+				E348F335158C6A25009D25D5 /* Supporting Files */,
+			);
+			path = StoryTellingTests;
+			sourceTree = "<group>";
+		};
+		E348F335158C6A25009D25D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E348F336158C6A25009D25D5 /* StoryTellingTests-Info.plist */,
+				E348F337158C6A25009D25D5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E348F30B158C6A24009D25D5 /* StoryTelling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E348F33F158C6A25009D25D5 /* Build configuration list for PBXNativeTarget "StoryTelling" */;
+			buildPhases = (
+				E348F308158C6A24009D25D5 /* Sources */,
+				E348F309158C6A24009D25D5 /* Frameworks */,
+				E348F30A158C6A24009D25D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoryTelling;
+			productName = StoryTelling;
+			productReference = E348F30C158C6A24009D25D5 /* StoryTelling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E348F32C158C6A25009D25D5 /* StoryTellingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E348F342158C6A25009D25D5 /* Build configuration list for PBXNativeTarget "StoryTellingTests" */;
+			buildPhases = (
+				E348F328158C6A25009D25D5 /* Sources */,
+				E348F329158C6A25009D25D5 /* Frameworks */,
+				E348F32A158C6A25009D25D5 /* Resources */,
+				E348F32B158C6A25009D25D5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E348F333158C6A25009D25D5 /* PBXTargetDependency */,
+			);
+			name = StoryTellingTests;
+			productName = StoryTellingTests;
+			productReference = E348F32D158C6A25009D25D5 /* StoryTellingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E348F303158C6A24009D25D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = PhoneSoul;
+			};
+			buildConfigurationList = E348F306158C6A24009D25D5 /* Build configuration list for PBXProject "StoryTelling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E348F301158C6A24009D25D5;
+			productRefGroup = E348F30D158C6A24009D25D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E348F30B158C6A24009D25D5 /* StoryTelling */,
+				E348F32C158C6A25009D25D5 /* StoryTellingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E348F30A158C6A24009D25D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F31B158C6A24009D25D5 /* InfoPlist.strings in Resources */,
+				E348F327158C6A24009D25D5 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E348F32A158C6A25009D25D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F339158C6A25009D25D5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E348F32B158C6A25009D25D5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E348F308158C6A24009D25D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F31D158C6A24009D25D5 /* main.m in Sources */,
+				E348F321158C6A24009D25D5 /* AppDelegate.m in Sources */,
+				E348F324158C6A24009D25D5 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E348F328158C6A25009D25D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E348F33C158C6A25009D25D5 /* StoryTellingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E348F333158C6A25009D25D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E348F30B158C6A24009D25D5 /* StoryTelling */;
+			targetProxy = E348F332158C6A25009D25D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E348F319158C6A24009D25D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E348F31A158C6A24009D25D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E348F325158C6A24009D25D5 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E348F326158C6A24009D25D5 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		E348F337158C6A25009D25D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E348F338158C6A25009D25D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E348F33D158C6A25009D25D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E348F33E158C6A25009D25D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E348F340158C6A25009D25D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
+				INFOPLIST_FILE = "StoryTelling/StoryTelling-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E348F341158C6A25009D25D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
+				INFOPLIST_FILE = "StoryTelling/StoryTelling-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E348F343158C6A25009D25D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryTelling.app/StoryTelling";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
+				INFOPLIST_FILE = "StoryTellingTests/StoryTellingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E348F344158C6A25009D25D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StoryTelling.app/StoryTelling";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
+				INFOPLIST_FILE = "StoryTellingTests/StoryTellingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E348F306158C6A24009D25D5 /* Build configuration list for PBXProject "StoryTelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E348F33D158C6A25009D25D5 /* Debug */,
+				E348F33E158C6A25009D25D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E348F33F158C6A25009D25D5 /* Build configuration list for PBXNativeTarget "StoryTelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E348F340158C6A25009D25D5 /* Debug */,
+				E348F341158C6A25009D25D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E348F342158C6A25009D25D5 /* Build configuration list for PBXNativeTarget "StoryTellingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E348F343158C6A25009D25D5 /* Debug */,
+				E348F344158C6A25009D25D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E348F303158C6A24009D25D5 /* Project object */;
+}
