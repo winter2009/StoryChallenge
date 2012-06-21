@@ -10,21 +10,22 @@
 
 @interface AppDataManager : NSObject 
 {
-    NSMutableArray  *m_keywords;
-    NSMutableArray  *m_currentKeywords;
+    NSMutableArray  *m_topics;
+    NSMutableArray  *m_conditions;
+    NSString        *m_currentTopic;
     NSInteger       m_currentPlayerIndex;
     NSMutableArray  *m_playerNames;
     NSMutableArray  *m_playerRatings;
 }
 
-@property (nonatomic, strong) NSMutableArray *currentKeywords;
+@property (nonatomic, strong) NSString *currentTopic;
 @property (nonatomic) NSInteger currentPlayerIndex;
 
 + (AppDataManager *)sharedAppDataManager;
-- (void)generateKeyWords;
+- (void)generateTopic;
+- (NSString *)generateCondition;
 - (void)setCurrentPlayerName:(NSString *)name;
 - (void)setCurrentPlayerRating:(NSInteger)rating;
-- (NSString *)keywordsString;
 - (NSString *)currentPlayerName;
 - (NSString *)winner;
 

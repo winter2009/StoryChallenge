@@ -58,7 +58,7 @@
     [super viewWillAppear:animated];
     self.title = [NSString stringWithFormat:@"玩家 %d", m_appDataManager.currentPlayerIndex + 1];
     
-    self.lblKeywords.text = [m_appDataManager keywordsString];
+    self.lblKeywords.text = [m_appDataManager currentTopic];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoRecordViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface VideoRecordViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *lblKeywords;
+@property (weak, nonatomic) IBOutlet UILabel *lblTopic;
+@property (weak, nonatomic) IBOutlet UILabel *lblCondition;
 @property (weak, nonatomic) IBOutlet UIButton *btnStart;
 @property (weak, nonatomic) IBOutlet UIView *viewRating;
+@property (weak, nonatomic) IBOutlet UIView *viewTopic;
+@property (weak, nonatomic) IBOutlet UIView *viewCondition;
+@property (weak, nonatomic) IBOutlet UILabel *lblTimer;
+@property (strong, nonatomic) NSTimer *timer;
 
-- (IBAction)btnStartRecordClicked:(id)sender;
 - (IBAction)btnRatingClicked:(id)sender;
 - (IBAction)btnRatingConfirmed:(id)sender;
 

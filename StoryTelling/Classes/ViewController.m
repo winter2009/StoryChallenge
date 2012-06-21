@@ -51,7 +51,7 @@
 #pragma mark IBActions
 - (IBAction)btnNewGameClicked:(id)sender 
 {
-    [m_appDataManager generateKeyWords];
+    [m_appDataManager generateTopic];
     [self.navigationController pushViewController:m_playerViewController animated:YES];
 }
 

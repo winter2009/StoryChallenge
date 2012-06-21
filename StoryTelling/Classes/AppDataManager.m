@@ -11,7 +11,7 @@
 static AppDataManager *singletonAppDataManager = nil;
 
 @implementation AppDataManager
-@synthesize currentKeywords = m_currentKeywords;
+@synthesize currentTopic = m_currentTopic;
 @synthesize currentPlayerIndex = m_currentPlayerIndex;
 
 - (id)init
@@ -19,24 +19,33 @@ static AppDataManager *singletonAppDataManager = nil;
 	if (( self = [super init] ))
 	{
         m_currentPlayerIndex = 0;
-        m_currentKeywords = [[NSMutableArray alloc] initWithCapacity:3];
+        m_currentTopic = @"";
         m_playerNames = [[NSMutableArray alloc] initWithObjects:@"", @"", @"", nil];
         m_playerRatings = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:0], [NSNumber numberWithInt:0], [NSNumber numberWithInt:0], nil];
-		m_keywords = [[NSMutableArray alloc] init];
-        [m_keywords addObject:@"猴子"];
-        [m_keywords addObject:@"小孩"];
-        [m_keywords addObject:@"学习"];
-        [m_keywords addObject:@"吃饭"];
-        [m_keywords addObject:@"打猎"];
-        [m_keywords addObject:@"电脑"];
-        [m_keywords addObject:@"水"];
-        [m_keywords addObject:@"葡萄"];
-        [m_keywords addObject:@"摔倒"];
-        [m_keywords addObject:@"血"];
-        [m_keywords addObject:@"妈妈"];
-        [m_keywords addObject:@"忧伤"];
-        [m_keywords addObject:@"爱"];
-        [m_keywords addObject:@"痛苦"];
+        
+		m_topics = [[NSMutableArray alloc] init];        
+        [m_topics addObject:@"上得山多终遇虎"];
+        [m_topics addObject:@"蜗牛建房子"];
+        [m_topics addObject:@"大战红山"];
+        [m_topics addObject:@"超人不会飞"];
+        [m_topics addObject:@"水淹乌节路"];
+        [m_topics addObject:@"家有一老如有一宝"];
+        [m_topics addObject:@"向左走向右走"];
+        [m_topics addObject:@"新加坡河畔的王子"];
+        [m_topics addObject:@"打肿脸皮充胖子"];
+        [m_topics addObject:@"霹雳火"];
+        
+        m_conditions = [[NSMutableArray alloc] init];
+        [m_conditions addObject:@"表演中，参赛同学必须大笑三次"];
+        [m_conditions addObject:@"故事中的人物必须说三次：“好吃！”"];
+        [m_conditions addObject:@"故事中必须有鱼头米粉"];
+        [m_conditions addObject:@"部分故事必须发生在地铁站"];
+        [m_conditions addObject:@"部分故事必须发生在屋顶上"];
+        [m_conditions addObject:@"故事中的人物必须说三次：“跟我走！”"];
+        [m_conditions addObject:@"部分故事中必须发生在一个婚礼上"];
+        [m_conditions addObject:@"故事中的人物必须说三句吉祥话"];
+        [m_conditions addObject:@"表演中，参赛同学必须跳草裙舞"];
+        [m_conditions addObject:@"故事必须发生在停电的晚上"];
 	}
 	
 	return self;
@@ -44,27 +53,14 @@ static AppDataManager *singletonAppDataManager = nil;
 
 #pragma mark -
 #pragma mark Public Methods
-- (void)generateKeyWords
+- (void)generateTopic
 {
-    NSMutableArray *tempKeyWords = [[NSMutableArray alloc] initWithArray:m_keywords copyItems:YES];
-    [m_currentKeywords removeAllObjects];
-    
-    NSInteger count = 3;
-    while ( count > 0 )
-    {
-        NSInteger index = (NSInteger)floor((rand() * 1.0 / RAND_MAX) * tempKeyWords.count);
-        [m_currentKeywords addObject:[tempKeyWords objectAtIndex:index]];
-        [tempKeyWords removeObjectAtIndex:index];
-        count--;
-    }
-    
-    // reset player names and player ratings
-    m_currentPlayerIndex = 0;
-    for ( int i = 0; i < 3; i++ ) 
-    {
-        [m_playerNames replaceObjectAtIndex:i withObject:@""];
-        [m_playerRatings replaceObjectAtIndex:i withObject:[NSNumber numberWithInt:0]];
-    }
+    m_currentTopic = [m_topics objectAtIndex:( arc4random() % m_topics.count )];
+}
+
+- (NSString *)generateCondition
+{
+    return [m_conditions objectAtIndex:( arc4random() % m_conditions.count )];
 }
 
 - (void)setCurrentPlayerName:(NSString *)name
@@ -75,18 +71,6 @@ static AppDataManager *singletonAppDataManager = nil;
 - (void)setCurrentPlayerRating:(NSInteger)rating
 {
     [m_playerRatings replaceObjectAtIndex:m_currentPlayerIndex withObject:[NSNumber numberWithInt:rating]];
-}
-
-- (NSString *)keywordsString
-{
-    NSMutableString *keywords = [[NSMutableString alloc] init];
-    for ( NSInteger i = 0; i < self.currentKeywords.count-1; i++ )
-    {
-        [keywords appendFormat:@"%@, ", [self.currentKeywords objectAtIndex:i]];
-    }
-    [keywords appendFormat:@"%@", [self.currentKeywords objectAtIndex:self.currentKeywords.count-1]];
-    
-    return keywords;
 }
 
 - (NSString *)currentPlayerName
