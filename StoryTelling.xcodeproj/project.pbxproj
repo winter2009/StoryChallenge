@@ -527,10 +527,12 @@
 		E348F340158C6A25009D25D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jiang Liheng (YNWE5F42W8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
 				INFOPLIST_FILE = "StoryTelling/StoryTelling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "209F9BC6-19F0-4F04-9FCE-680D2D311B48";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -538,10 +540,12 @@
 		E348F341158C6A25009D25D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: FreeWave Media Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StoryTelling/StoryTelling-Prefix.pch";
 				INFOPLIST_FILE = "StoryTelling/StoryTelling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "892F0AD1-DEFE-45CA-9EED-500A9D6CE472";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
